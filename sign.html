@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>DIGITAL STICKY NOTES</title>
+
+  <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-auth.js"></script>
+  <link rel="stylesheet" href="sign.css" />
+
+  <script src="sign.js"></script>
+</head>
+
+<body>
+  <div id="page_div" class="page-div">
+    <h1> Digital Sticky Notes</h1>
+    <input type="email" placeholder="email" id="email" />
+    <br>
+    <input type="password" placeholder="password" id="password" />
+    <br>
+    <button onclick="signUp()" id="signUp">Sign Up</button>
+    <br>
+    <button onclick="signIn()" id="signIn">Sign In</button>
+    <br>
+  </div>
+
+  <div id="user_div" class="loggedin-div">
+    <h3 id="user_para"></h3>
+    <ul>
+      <li tabindex="5">
+        <a href="#" contenteditable>
+          <h2>Note #1</h2>
+          <p>Task #1</p>
+        </a>
+      </li>
+      <li tabindex="6">
+        <a href="#" contenteditable>
+          <h2>Note #2</h2>
+          <p>Task #2</p>
+        </a>
+      </li>
+      <li tabindex="7">
+        <a href="#" contenteditable>
+          <h2>Note #3</h2>
+          <p>Task #3</p>
+        </a>
+      </li>
+      <li tabindex="8">
+        <a href="#" contenteditable>
+          <h2>Note #4</h2>
+          <p>Task #4</p>
+        </a>
+      </li>
+      <li tabindex="9">
+        <a href="#" contenteditable>
+          <h2>Note #5</h2>
+          <p>Task #5</p>
+        </a>
+      </li>
+      <li tabindex="10">
+        <a href="#" contenteditable>
+          <h2>Note #6</h2>
+          <p>Task #6</p>
+        </a>
+      </li>
+      <li tabindex="11">
+        <a href="#" contenteditable>
+          <h2>Note #7</h2>
+          <p>Task #7</p>
+        </a>
+      </li>
+      <li tabindex="12">
+        <a href="#" contenteditable>
+          <h2>Note #8</h2>
+          <p>Task #8</p>
+        </a>
+      </li>
+      <li tabindex="13">
+        <a href="#" contenteditable>
+          <h2>Note #9</h2>
+          <p>Task #9</p>
+        </a>
+      </li>
+      <li tabindex="14">
+        <a href="#" contenteditable>
+          <h2>Note #10</h2>
+          <p>Task #10</p>
+        </a>
+      </li>
+    </ul>
+    <button onclick="logout()">Logout</button>
+  </div>
+
+</body>
+
+</html>
